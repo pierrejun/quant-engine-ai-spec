@@ -58,6 +58,54 @@
 
 ## 系统架构
 
+```text
+quant-engine-ai-spec
+├─ app
+│  ├─ push
+│  │  └─ telegram bot 渠道接入与消息回传
+│  └─ api
+│     └─ 预留的 HTTP / OpenClaw 接入层
+├─ configs
+│  ├─ providers.yaml
+│  ├─ runtime.yaml
+│  ├─ thresholds.yaml
+│  └─ symbol_aliases.json
+├─ engine
+│  ├─ collectors
+│  │  └─ 原始数据采集与标准化装配
+│  ├─ providers
+│  │  ├─ us
+│  │  │  └─ Yahoo / Finnhub
+│  │  ├─ cn
+│  │  │  └─ Tushare
+│  │  └─ demo
+│  │     └─ 演示数据源
+│  ├─ features
+│  │  └─ 技术面 / 估值 / 质量 / 情绪 / 事件特征
+│  ├─ evidence
+│  │  └─ 证据构建与解释生成
+│  ├─ decision
+│  │  └─ buy / hold / sell 规则决策
+│  ├─ risk
+│  │  └─ 风险标记与结论降级
+│  ├─ reporting
+│  │  └─ 标准报告 / 详细报告渲染
+│  └─ querying
+│     └─ 名称识别 / 缓存复用 / 机器人摘要格式化
+├─ scripts
+│  ├─ run_single.py
+│  ├─ query_symbol.py
+│  └─ run_telegram_bot.py
+├─ data
+│  ├─ snapshots
+│  ├─ outputs
+│  ├─ logs
+│  └─ runtime
+└─ tests
+   ├─ unit
+   └─ integration
+```
+
 ### 1. Engine 层
 
 `engine/` 是核心分析引擎，负责真正的量化处理流程。
