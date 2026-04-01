@@ -314,14 +314,4 @@ py scripts/run_telegram_bot.py
 - 调度与批量任务
 - OpenClaw 适配层
 
-## 发布注意事项
 
-以下内容默认不应上传：
-
-- `.env`
-- 本地产生的 `data/logs/`
-- 本地产生的 `data/outputs/`
-- 本地产生的 `data/snapshots/`
-- 本地产生的 `data/runtime/`
-
-这些都属于本地运行态或结果产物，而不是源码本身。
