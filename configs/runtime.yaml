@@ -1,0 +1,9 @@
+{
+  "defaults": {
+    "market": "US",
+    "use_demo_data": true,
+    "output_dir": "data/outputs",
+    "snapshot_dir": "data/snapshots",
+    "log_dir": "data/logs"
+  }
+}

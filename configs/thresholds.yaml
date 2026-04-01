@@ -1,0 +1,19 @@
+{
+  "data_quality": {
+    "insufficient": 0.4,
+    "degraded_news_penalty": 0.06,
+    "degraded_fundamentals_penalty": 0.2,
+    "short_price_history_penalty": 0.15
+  },
+  "decision": {
+    "buy": 0.7,
+    "hold_positive": 0.55,
+    "observe": 0.45,
+    "hold_negative": 0.3
+  },
+  "risk": {
+    "high_volatility_atr_pct": 0.05,
+    "conflicting_gap_max": 0.1,
+    "uncertainty_high": 0.35
+  }
+}

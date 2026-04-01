@@ -1,0 +1,27 @@
+{
+  "market_defaults": {
+    "US": {
+      "price": "yahoo",
+      "fundamentals": "finnhub",
+      "news": "finnhub"
+    }
+  },
+  "providers": {
+    "yahoo": {
+      "enabled": true,
+      "timeout_seconds": 10
+    },
+    "tushare": {
+      "enabled": true,
+      "timeout_seconds": 10
+    },
+    "finnhub": {
+      "enabled": true,
+      "timeout_seconds": 10
+    },
+    "newsapi": {
+      "enabled": false,
+      "timeout_seconds": 10
+    }
+  }
+}

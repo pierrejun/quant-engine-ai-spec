@@ -1,0 +1,52 @@
+{
+  "symbols": [
+    {
+      "symbol": "NVDA",
+      "market": "US",
+      "display_name": "NVIDIA",
+      "aliases": ["nvda", "nvidia", "英伟达"]
+    },
+    {
+      "symbol": "AAPL",
+      "market": "US",
+      "display_name": "Apple",
+      "aliases": ["aapl", "apple", "苹果"]
+    },
+    {
+      "symbol": "MSFT",
+      "market": "US",
+      "display_name": "Microsoft",
+      "aliases": ["msft", "microsoft", "微软"]
+    },
+    {
+      "symbol": "TSLA",
+      "market": "US",
+      "display_name": "Tesla",
+      "aliases": ["tsla", "tesla", "特斯拉"]
+    },
+    {
+      "symbol": "601166.SH",
+      "market": "CN",
+      "display_name": "兴业银行",
+      "aliases": ["601166", "601166.sh", "兴业银行"]
+    },
+    {
+      "symbol": "600519.SH",
+      "market": "CN",
+      "display_name": "贵州茅台",
+      "aliases": ["600519", "600519.sh", "贵州茅台"]
+    },
+    {
+      "symbol": "000001.SZ",
+      "market": "CN",
+      "display_name": "平安银行",
+      "aliases": ["000001", "000001.sz", "平安银行"]
+    },
+    {
+      "symbol": "01810.HK",
+      "market": "HK",
+      "display_name": "小米集团-W",
+      "aliases": ["01810", "01810.hk", "小米", "小米集团", "小米集团-w"]
+    }
+  ]
+}

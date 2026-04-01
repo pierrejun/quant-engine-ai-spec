@@ -1,0 +1,7 @@
+{
+  "category_weights": {
+    "technical": 0.4,
+    "fundamentals": 0.35,
+    "sentiment": 0.25
+  }
+}
