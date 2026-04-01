@@ -2,6 +2,14 @@
 
 一个面向量化分析与投顾式输出的 MVP 项目，目标是把“数据采集 -> 特征提取 -> 证据构建 -> 决策输出 -> 风险修正 -> 报告生成 -> 机器人分发”串成一条可复现、可回放、可迁移的分析链路。
 
+## 一眼看懂
+
+- 输入：股票代码或股票名称
+- 处理：采集真实数据，构建结构化证据，生成规则化结论
+- 输出：中文摘要、标准报告、详细报告、结构化 JSON
+- 渠道：当前已接入 Telegram Bot
+- 定位：可运行、可复盘、便于后续迁移到 OpenClaw 的量化分析 MVP
+
 当前项目已经支持：
 
 - 美股 `US` 分析
@@ -115,6 +123,28 @@
   -> RuleBasedRiskEngine 做风险修正
   -> ReportRenderer 输出 md/detail.md/json
   -> Telegram Bot 回传摘要与报告入口
+```
+
+## 目录结构
+
+```text
+app/
+  push/                  Telegram 机器人入口
+configs/                 运行配置、权重、阈值、别名
+engine/
+  collectors/            数据采集封装
+  providers/             Yahoo / Finnhub / Tushare / Demo
+  features/              特征提取
+  evidence/              证据构建
+  decision/              决策引擎
+  risk/                  风险修正
+  reporting/             Markdown 报告渲染
+  querying/              名称识别、缓存复用、机器人格式化
+scripts/
+  run_single.py          单票分析入口
+  query_symbol.py        名称识别与缓存复用入口
+  run_telegram_bot.py    Telegram 机器人启动入口
+tests/                   单元测试与集成测试
 ```
 
 ## 输出产物
